@@ -48,9 +48,27 @@ export default function Navbar() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">
+                        <a
+                            href="#nosotros"
+                            className="text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#8c6b5d] after:transition-all after:duration-300 hover:after:w-full"
+                        >
+                            Nosotros
+                        </a>
+                        <a
+                            href="#especialidades"
+                            className="text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#8c6b5d] after:transition-all after:duration-300 hover:after:w-full"
+                        >
+                            Especialidades
+                        </a>
+                        <a
+                            href="#galeria"
+                            className="text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#8c6b5d] after:transition-all after:duration-300 hover:after:w-full"
+                        >
+                            Galería
+                        </a>
                         <button
                             onClick={handleMenuClick}
-                            className="text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium"
+                            className="text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#8c6b5d] after:transition-all after:duration-300 hover:after:w-full"
                         >
                             Menú
                         </button>
@@ -99,6 +117,27 @@ export default function Navbar() {
                     }`}
             >
                 <div className="px-4 py-4 flex flex-col gap-4">
+                    <a
+                        href="#nosotros"
+                        onClick={() => setMobileOpen(false)}
+                        className="text-left text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium text-lg"
+                    >
+                        Nosotros
+                    </a>
+                    <a
+                        href="#especialidades"
+                        onClick={() => setMobileOpen(false)}
+                        className="text-left text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium text-lg"
+                    >
+                        Especialidades
+                    </a>
+                    <a
+                        href="#galeria"
+                        onClick={() => setMobileOpen(false)}
+                        className="text-left text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium text-lg"
+                    >
+                        Galería
+                    </a>
                     <button
                         onClick={handleMenuClick}
                         className="text-left text-gray-700 hover:text-[#8c6b5d] transition-colors font-medium text-lg"

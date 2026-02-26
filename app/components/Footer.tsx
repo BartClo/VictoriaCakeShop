@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
 
                     {/* ── Column 1: Brand ── */}
-                    <div>
+                    <div className="reveal stagger-1">
                         <h3 className="font-heading text-3xl font-bold text-white mb-3">
                             Postres Victoria
                         </h3>
@@ -21,7 +21,7 @@ export default function Footer() {
                     </div>
 
                     {/* ── Column 2: Location & Hours ── */}
-                    <div>
+                    <div className="reveal stagger-2">
                         <h4 className="font-semibold text-white mb-5 uppercase text-xs tracking-[0.15em]">
                             Encuéntranos
                         </h4>
@@ -73,7 +73,7 @@ export default function Footer() {
                     </div>
 
                     {/* ── Column 3: WhatsApp CTA ── */}
-                    <div>
+                    <div className="reveal stagger-3">
                         <h4 className="font-semibold text-white mb-5 uppercase text-xs tracking-[0.15em]">
                             Haz tu Pedido
                         </h4>

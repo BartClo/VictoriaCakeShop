@@ -9,6 +9,7 @@ export default function Hero() {
     const { openMenu } = useMenuModal();
     return (
         <section
+            id="inicio"
             className="relative min-h-screen flex items-center overflow-hidden"
             style={{
                 background:
@@ -37,33 +38,33 @@ export default function Hero() {
                     {/* Text Content */}
                     <div className="order-2 lg:order-1 text-center lg:text-left">
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 bg-[#8c6b5d]/10 border border-[#8c6b5d]/20 rounded-full px-4 py-1.5 mb-6">
+                        <div className="hero-fade-in inline-flex items-center gap-2 bg-[#8c6b5d]/10 border border-[#8c6b5d]/20 rounded-full px-4 py-1.5 mb-6">
                             <span className="w-2 h-2 rounded-full bg-[#8c6b5d] animate-pulse" />
                             <span className="text-[#8c6b5d] text-sm font-medium">
                                 Astorga 618, Rancagua
                             </span>
                         </div>
 
-                        <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] mb-6">
+                        <h1 className="hero-fade-in-delay-1 font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] mb-6">
                             El dulce{" "}
                             <span className="text-[#8c6b5d] italic">equilibrio</span>{" "}
                             en Rancagua
                         </h1>
 
-                        <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0">
+                        <p className="hero-fade-in-delay-2 text-lg sm:text-xl text-gray-600 leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0">
                             Pastelería artesanal que combina lo mejor de la{" "}
                             <strong className="text-gray-800">tradición</strong> con una
                             línea{" "}
                             <strong className="text-gray-800">saludable y sin culpa</strong>.
                         </p>
 
-                        <p className="text-base text-gray-500 mb-10 max-w-xl mx-auto lg:mx-0">
+                        <p className="hero-fade-in-delay-2 text-base text-gray-500 mb-10 max-w-xl mx-auto lg:mx-0">
                             Tortas golosas, waffles, milkshakes y nuestra exclusiva línea
                             keto — sin azúcar ni harinas refinadas.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <div className="hero-fade-in-delay-3 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <a
                                 href={WHATSAPP_URL}
                                 target="_blank"
@@ -102,7 +103,7 @@ export default function Hero() {
                         </div>
 
                         {/* Trust badges */}
-                        <div className="flex items-center gap-6 mt-10 justify-center lg:justify-start text-sm text-gray-500">
+                        <div className="hero-fade-in-delay-3 flex items-center gap-6 mt-10 justify-center lg:justify-start text-sm text-gray-500">
                             <div className="flex items-center gap-1.5">
                                 <svg className="w-4 h-4 text-[#8c6b5d]" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -127,7 +128,7 @@ export default function Hero() {
                     {/* Hero Image — organic large format */}
                     <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
                         {/* Soft decorative glow behind image */}
-                        <div className="relative">
+                        <div className="relative hero-image-entrance">
                             <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[40%_60%_55%_45%/45%_55%_60%_40%] bg-[#8c6b5d]/15 blur-2xl scale-95" />
                             {/* Blob-shaped image container */}
                             <div
@@ -147,7 +148,7 @@ export default function Hero() {
                             </div>
 
                             {/* Floating accent badge */}
-                            <div className="absolute -bottom-4 -left-6 bg-white rounded-2xl shadow-xl px-5 py-3 flex items-center gap-3 border border-gray-100">
+                            <div className="float-badge absolute -bottom-4 -left-6 bg-white rounded-2xl shadow-xl px-5 py-3 flex items-center gap-3 border border-gray-100">
                                 <span className="text-2xl">🎂</span>
                                 <div>
                                     <p className="text-xs text-gray-500 leading-none mb-0.5">Pedidos</p>
@@ -156,7 +157,7 @@ export default function Hero() {
                             </div>
 
                             {/* Floating keto badge */}
-                            <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl px-4 py-2.5 flex items-center gap-2 border border-gray-100">
+                            <div className="float-badge-alt absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl px-4 py-2.5 flex items-center gap-2 border border-gray-100">
                                 <span className="text-xl">🌿</span>
                                 <p className="text-sm font-bold text-gray-800">Línea Keto</p>
                             </div>

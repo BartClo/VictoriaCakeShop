@@ -83,7 +83,7 @@ export default function Specialties() {
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Section Header */}
-                    <div className="text-center mb-20">
+                    <div className="text-center mb-20 reveal">
                         <span className="inline-block text-[#8c6b5d] font-medium text-sm uppercase tracking-widest mb-4">
                             Lo mejor de dos mundos
                         </span>
@@ -99,10 +99,10 @@ export default function Specialties() {
 
                     {/* Cards Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-                        {specialties.map((item) => (
+                        {specialties.map((item, index) => (
                             <div
                                 key={item.id}
-                                className="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100/80 hover:-translate-y-2"
+                                className={`reveal stagger-${index + 1} group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100/80 hover:-translate-y-2`}
                             >
                                 {/* Card Image — large, full-width, clickable */}
                                 <button
@@ -183,7 +183,7 @@ export default function Specialties() {
                     </div>
 
                     {/* Bottom CTA */}
-                    <div className="mt-20 text-center">
+                    <div className="mt-20 text-center reveal">
                         <p className="text-gray-500 mb-6 text-base">
                             ¿No ves lo que buscas? Pregúntanos, hacemos pedidos personalizados.
                         </p>

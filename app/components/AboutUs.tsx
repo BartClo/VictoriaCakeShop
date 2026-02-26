@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function AboutUs() {
     return (
-        <section className="py-28 sm:py-36 bg-[#fdfbf7] overflow-hidden">
+        <section id="nosotros" className="py-28 sm:py-36 bg-[#fdfbf7] overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
                     {/* ── Left: Text content ── */}
-                    <div>
+                    <div className="reveal-left">
                         <span className="inline-block text-[#8c6b5d] font-medium text-sm uppercase tracking-widest mb-4">
                             Nuestra Historia
                         </span>
@@ -56,7 +56,7 @@ export default function AboutUs() {
                     </div>
 
                     {/* ── Right: Photo collage ── */}
-                    <div className="grid grid-cols-2 gap-4 lg:gap-5">
+                    <div className="reveal-right grid grid-cols-2 gap-4 lg:gap-5">
                         {/* Large image — top left, spans 2 rows */}
                         <div className="relative rounded-2xl overflow-hidden shadow-lg row-span-2 h-[360px] sm:h-[440px]">
                             <Image
